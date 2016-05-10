@@ -1,0 +1,87 @@
+/** Captain America's Shield CSS experiment.
+
+By Charls Smith, 2016. http://charlesesmith.net
+
+**/
+
+.outer-circle {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  z-index: -5;
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, #FC0000, #A00);
+  border: 2px solid #000;
+}
+
+.white-circle {
+  border-radius: 50%;
+  margin: 37px 0 0 37px;
+  width: 225px;
+  height: 225px;
+  z-index: -4;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.inner-red-circle {
+  border-radius: 50%;
+  margin: 35px 0 0 35px;
+  width: 150px;
+  height: 150px;
+  z-index: -3;
+  background-image: -webkit-radial-gradient(20px 20px, circle cover, #FC0000, #A00);
+  border: 2px solid #000;
+}
+
+.inner-blue-circle {
+  border-radius: 50%;
+  margin: 35px 0 0 35px;
+  width: 75px;
+  height: 75px;
+  z-index: -2;
+  background-image: -webkit-radial-gradient(10px 10px, circle cover, #00F, #00A);
+  border: 2px solid #000;
+}
+
+
+.star {
+  margin: 24px 0 0 -2px;
+  position: relative;
+  display: block;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+  border-right: 40px solid transparent;
+  border-bottom: 24px solid #fff;
+  border-left: 40px solid transparent;
+  transform: rotate(35deg);
+}
+
+.star:before {
+  border-bottom: 32px solid #fff;
+  border-left: 13px solid transparent;
+  border-right: 14px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -21px;
+  left: -26px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+.star:after {
+  position: absolute;
+    display: block;
+    color: red;
+    top: 0px;
+    left: -42px;
+    width: 0px;
+    height: 0px;
+    border-right: 40px solid transparent;
+    border-bottom: 24px solid #fff;
+    border-left: 40px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
